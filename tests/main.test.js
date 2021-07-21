@@ -31,3 +31,19 @@ describe("topScoringStudent", () => {
     expect(actual).to.eql(expected);
   });
 });
+
+describe("topScoringStudent", () => {
+  it("should return null if no list of students", () => {
+    const students = [];
+    const actual = topScoringStudent(students);
+    expect(actual).to.be.null;
+  });
+});
+
+describe("medianScore", () => {
+  it("should return null if no list of students", () => {
+    const students = [];
+    const actual = medianScore(students);
+    expect(actual).to.be.null;
+  });
+});
